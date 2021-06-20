@@ -365,7 +365,11 @@
                  <h3 class="footer-join-h">Подпишитесь на рассылку</h3>
                  <form class="form-footer">
                      <input type="email" name="user-email" class="form-text" placeholder="E-mail">
-                     <button type="submit" class="subscribe-btn">Подписаться</button>
+                     <button type="submit" class="subscribe-btn">Подписаться
+                        <svg class="footer-icons-svg">
+                            <use href="./images/sprite.svg#icon-subscribe"></use>
+                        </svg> 
+                     </button>
                  </form>
                 </div>
         </div>
@@ -376,7 +380,21 @@
                <svg class="cross-icon" width="11px" height="11px">
                <use href="./images/sprite.svg#icon-cross"></use>
            </svg></button>
-           <p class="modal-title"></p>
+           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+           <form class="form">
+               <div class="form-field">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-input" name="name">
+               </div>
+               <div class="form-field">
+                <label for="tel" class="form-label">Телефон</label>
+                <input type="tel" class="form-input" name="tel">
+           </div>
+           <div class="form-field">
+            <label for="email" class="form-label">Почта</label>
+            <input type="email" class="form-input" name="email">
+            </div>
+           </form>
        </div>
    </div>
    <script src="./js/modal.js"></script>
