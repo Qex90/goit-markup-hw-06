@@ -730,3 +730,15 @@ align-items: center;
 .policy {
     color: var(--accent-color);
 }
+.check-input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.checkbox {
+    position: absolute;
+    margin-left: -20px;
+}
+.check {
+    padding-left: 15px;
+}

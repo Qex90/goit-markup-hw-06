@@ -92,27 +92,24 @@
             <div class="container">
                 <h2 class="our-work">Чем мы занимаемся</h2>
                 <ul class="work-item">
-                <div class="img-item">
                     <li class="img-item">
-                        <img src="./images/box1.jpg" alt="" width="370"></li>
+                        <img src="./images/box1.jpg" alt="" width="370">
                     <div class="overlay-img">
                         <p class="overlay-p">Десктопные приложения</p>
                     </div>
-                </div>
-                <div class="img-item">
+                    </li>
                     <li class="img-item">
-                        <img src="./images/box2.jpg" alt="" width="370"></li>
+                        <img src="./images/box2.jpg" alt="" width="370">
                     <div class="overlay-img">
                         <p class="overlay-p">Мобильные приложения</p>
                     </div>
-                </div>  
-                <div class="img-item">
+                    </li>
                     <li class="img-item">
-                        <img src="./images/box3.jpg" alt="" width="370"></li>
+                        <img src="./images/box3.jpg" alt="" width="370">
                     <div class="overlay-img">
                         <p class="overlay-p">Дизайнерские решения</p>
                     </div>
-                </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -389,7 +386,7 @@
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="form">
                 <div class="form-field">
-                    <label for="name" class="form-label">Имя</label>
+                    <label class="form-label">Имя</label>
                     <div class="form-input">
                         <svg class="cross-icon" width="18px" height="18px">
                             <use href="./images/sprite.svg#icon-person-black-18dp"></use>
@@ -398,7 +395,7 @@
                     </div>
                 </div>
                 <div class="form-field">
-                    <label for="tel" class="form-label">Телефон</label>
+                    <label class="form-label">Телефон</label>
                     <div class="form-input">
                         <svg class="cross-icon" width="18px" height="18px">
                             <use href="./images/sprite.svg#icon-phone-black-18dp"></use>
@@ -407,7 +404,7 @@
                     </div>
                 </div>
                 <div class="form-field">
-                    <label for="email" class="form-label">Почта</label>
+                    <label class="form-label">Почта</label>
                     <div class="form-input">
                         <svg class="cross-icon" width="18px" height="18px">
                             <use href="./images/sprite.svg#icon-email-black-18dp"></use>
@@ -416,13 +413,20 @@
                     </div>
                 </div>
                 <div class="form-field">
-                    <label for="email" class="form-label">Комментарий</label>
+                    <label class="form-label">Комментарий</label>
                     <textarea class="form-textarea" name="comment" placeholder="Введите текст"></textarea>
                 </div>
                 <div class="form-field contract-block">
-                    <input type="checkbox" required>
-                    <span>Соглашаюсь с рассылкой и принимаю</span>
-                    <a href="#" class="policy">Условия договора</a>
+                    <label class="check">
+                        <input class="check-input" type="checkbox" required>
+                        <span class="checkbox">
+                            <svg class="checkbox-svg" width="16px" height="15px">
+                                <use href="./images/sprite.svg#icon-Vector"></use>
+                            </svg>
+                        </span>
+                        <span>Соглашаюсь с рассылкой и принимаю</span>
+                        <a href="#" class="policy">Условия договора</a>
+                    </label>
                 </div>
                 <button type="submit" class="subscribe-btn"> Отправить</button>
             </form>
