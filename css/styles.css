@@ -731,14 +731,15 @@ align-items: center;
     color: var(--accent-color);
 }
 .check-input {
-    -webkit-appearance: none;
-    appearance: none;
-    position: absolute;
-}
-.checkbox {
     position: absolute;
     margin-left: -20px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
 }
-.check {
-    padding-left: 15px;
+.check-input:hover + .checkbox,
+.check-input:focus + .checkbox {
+    border-color: var(--accent-color);
 }
