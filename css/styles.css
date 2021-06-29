@@ -732,14 +732,27 @@ align-items: center;
 }
 .check-input {
     position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.checkbox-svg {
+    position: absolute;
     margin-left: -20px;
+    margin-bottom: -2px;
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
-    width: 16px;
-    height: 16px;
     cursor: pointer;
+    fill: transparent;
 }
-.check-input:hover + .checkbox,
-.check-input:focus + .checkbox {
+.check-input:hover + .checkbox-svg,
+.check-input:focus + .checkbox-svg{
     border-color: var(--accent-color);
+}
+.check-input:checked + .checkbox-svg {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+    border-color: transparent;
+}
+.check {
+    padding-left: 15px;
 }
