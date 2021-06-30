@@ -637,8 +637,14 @@ align-items: center;
     position: absolute;
     top: 8px;
     right: 8px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .modal-title {
     margin-top: 40px;
